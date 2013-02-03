@@ -1,0 +1,90 @@
+digraph reliance {
+	size="40,40", splines="polyline";
+	node [ fontsize=12, color="#444444" ];
+
+
+"File System"
+"Render System"
+"Resource Manager"
+"Scene Tree"
+"Script Manager"
+"Overlay Manager"
+"Input Manager"
+"Network Manager"
+"Render Window"
+"Engine Core"
+"Ikarus"
+"Event Manager?"
+
+
+// DIRECT CREATORS
+{ edge [color="#ff5858"]
+"Engine Core" -> "Overlay Manager"
+"Engine Core" -> "Script Manager"
+"Engine Core" -> "Render System"
+"Engine Core" -> "Input Manager"
+"Engine Core" -> "Render Window"
+"Engine Core" -> "Network Manager"
+"Engine Core" -> "Event Manager?"
+"Engine Core" -> "File System"
+"Ikarus" -> "Engine Core"
+"Ikarus" -> "Resource Manager"
+"Ikarus" -> "Scene Tree"
+}
+
+
+// EVENTS
+{ edge [color="#5858ff"]
+"Script Manager" -> "Ikarus"
+"Event Manager?" -> "Ikarus"
+}
+
+
+// REFERENCES
+{ edge [color="#58ff58", style="dashed"]
+"Scene Tree" -> "Render System"
+"Overlay Manager" -> "Render System"
+"Input Manager" -> "Event Manager?"
+"Network Manager" -> "Event Manager?"
+"Overlay Manager" -> "Event Manager?"
+"Resource Manager" -> "File System"
+"Script Manager" -> "File System"
+//"Logger" -> "File System"
+}
+
+
+/*
+// LOGGERS
+{ edge [color="#EEEEEE", smoothType="none"]
+"File System" -> "Logger"
+"Render System" -> "Logger"
+"Resource Manager" -> "Logger"
+"Scene Tree" -> "Logger"
+"Script Manager" -> "Logger"
+"Overlay Manager" -> "Logger"
+"Input Manager" -> "Logger"
+"Network Manager" -> "Logger"
+"Render Window" -> "Logger"
+"Engine Core" -> "Logger"
+"Ikarus" -> "Logger"
+"Event Manager?" -> "Logger"
+}
+
+// MEMORY USERS
+{ edge [color="#EEEEEE", smoothType="none"]
+"File System" -> "Memory Manager"
+"Render System" -> "Memory Manager"
+"Resource Manager" -> "Memory Manager"
+"Scene Tree" -> "Memory Manager"
+"Script Manager" -> "Memory Manager"
+"Overlay Manager" -> "Memory Manager"
+"Input Manager" -> "Memory Manager"
+"Network Manager" -> "Memory Manager"
+"Render Window" -> "Memory Manager"
+"Engine Core" -> "Memory Manager"
+"Ikarus" -> "Memory Manager"
+"Event Manager?" -> "Memory Manager"
+}
+*/
+
+}

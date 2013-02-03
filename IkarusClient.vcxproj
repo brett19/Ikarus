@@ -1,0 +1,260 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{D3C4B2D6-2873-46C3-914E-4FA9D1FFDE16}</ProjectGUID>
+    <RootNamespace>Ikarus</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>NotSet</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(LocalAppData)\Microsoft\VisualStudio\10.0\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;D3D_DEBUG_INFO;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dxof.lib;dxguid.lib;d3dx9d.lib;d3d9.lib;winmm.lib;opengl32.lib;lua5.1.lib;OIS_static_d.lib;freeimage.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Precise</FloatingPointModel>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>d3dxof.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;opengl32.lib;lua5.1.lib;OIS_static.lib;freeimage.lib;ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <Profile>false</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ArrList.hpp" />
+    <ClInclude Include="src\BoneNode.hpp" />
+    <ClInclude Include="src\BoundingBox.hpp" />
+    <ClInclude Include="src\BoundingSphere.hpp" />
+    <ClInclude Include="src\Camera.hpp" />
+    <ClInclude Include="src\Color.hpp" />
+    <ClInclude Include="src\CriticalSection.hpp" />
+    <ClInclude Include="src\DebugDraw.hpp" />
+    <ClInclude Include="src\Degree.hpp" />
+    <ClInclude Include="src\DX9RenderSystem.hpp" />
+    <ClInclude Include="src\Engine.hpp" />
+    <ClInclude Include="src\Entity.hpp" />
+    <ClInclude Include="src\EntityGroup.hpp" />
+    <ClInclude Include="src\Event.hpp" />
+    <ClInclude Include="src\EventDispatcher.hpp" />
+    <ClInclude Include="src\EventListener.hpp" />
+    <ClInclude Include="src\Events.hpp" />
+    <ClInclude Include="src\FileSystem.hpp" />
+    <ClInclude Include="src\FileSystemManager.hpp" />
+    <ClInclude Include="src\Font.hpp" />
+    <ClInclude Include="src\FrameListener.hpp" />
+    <ClInclude Include="src\Frustum.hpp" />
+    <ClInclude Include="src\GSDebug.hpp" />
+    <ClInclude Include="src\GSInitialLoad.hpp" />
+    <ClInclude Include="src\GSLogin.hpp" />
+    <ClInclude Include="src\Halia.hpp" />
+    <ClInclude Include="src\Ikarus.hpp" />
+    <ClInclude Include="src\IkarusApp.hpp" />
+    <ClInclude Include="src\IkarusData.hpp" />
+    <ClInclude Include="src\Index.hpp" />
+    <ClInclude Include="src\IndexBuffer.hpp" />
+    <ClInclude Include="src\IndexBufferBase.hpp" />
+    <ClInclude Include="src\IndexBufferMirror.hpp" />
+    <ClInclude Include="src\IndexBufferTyped.hpp" />
+    <ClInclude Include="src\InputConstants.hpp" />
+    <ClInclude Include="src\InputManager.hpp" />
+    <ClInclude Include="src\LogManager.hpp" />
+    <ClInclude Include="src\Material.hpp" />
+    <ClInclude Include="src\Math.hpp" />
+    <ClInclude Include="src\Matrix4.hpp" />
+    <ClInclude Include="src\Mesh.hpp" />
+    <ClInclude Include="src\MeshEntity.hpp" />
+    <ClInclude Include="src\Network.hpp" />
+    <ClInclude Include="src\OGLRenderSystem.hpp" />
+    <ClInclude Include="src\OSFileSystem.hpp" />
+    <ClInclude Include="src\Overlay.hpp" />
+    <ClInclude Include="src\OverlayButton.hpp" />
+    <ClInclude Include="src\OverlayImage.hpp" />
+    <ClInclude Include="src\OverlayLabel.hpp" />
+    <ClInclude Include="src\OverlayLBLabel.hpp" />
+    <ClInclude Include="src\OverlayListBox.hpp" />
+    <ClInclude Include="src\OverlayManager.hpp" />
+    <ClInclude Include="src\OverlayRenderer.hpp" />
+    <ClInclude Include="src\OverlayTextBox.hpp" />
+    <ClInclude Include="src\OverlayTexture.hpp" />
+    <ClInclude Include="src\PakClient.hpp" />
+    <ClInclude Include="src\PakServer.hpp" />
+    <ClInclude Include="src\PixelShader.hpp" />
+    <ClInclude Include="src\Plane.hpp" />
+    <ClInclude Include="src\Point.hpp" />
+    <ClInclude Include="src\Quarternion.hpp" />
+    <ClInclude Include="src\Radian.hpp" />
+    <ClInclude Include="src\Range.hpp" />
+    <ClInclude Include="src\Renderable.hpp" />
+    <ClInclude Include="src\RenderCached.hpp" />
+    <ClInclude Include="src\RenderQueue.hpp" />
+    <ClInclude Include="src\RenderResource.hpp" />
+    <ClInclude Include="src\RenderSystem.hpp" />
+    <ClInclude Include="src\RenderUnit.hpp" />
+    <ClInclude Include="src\RenderWindow.hpp" />
+    <ClInclude Include="src\Resource.hpp" />
+    <ClInclude Include="src\ResourceGroup.hpp" />
+    <ClInclude Include="src\ResourceManager.hpp" />
+    <ClInclude Include="src\RoseAnimator.hpp" />
+    <ClInclude Include="src\RoseCrypt.hpp" />
+    <ClInclude Include="src\RoseData.hpp" />
+    <ClInclude Include="src\RoseDialog.hpp" />
+    <ClInclude Include="src\RoseEvents.hpp" />
+    <ClInclude Include="src\RoseGfxList.hpp" />
+    <ClInclude Include="src\RoseLoginWindow.hpp" />
+    <ClInclude Include="src\RoseMapLoader.hpp" />
+    <ClInclude Include="src\RoseMeshList.hpp" />
+    <ClInclude Include="src\RoseMeshLoader.hpp" />
+    <ClInclude Include="src\RoseNetwork.hpp" />
+    <ClInclude Include="src\RosePacket.hpp" />
+    <ClInclude Include="src\RosePlayerNode.hpp" />
+    <ClInclude Include="src\RoseSkeletonLoader.hpp" />
+    <ClInclude Include="src\RoseSkybox.hpp" />
+    <ClInclude Include="src\RoseSocket.hpp" />
+    <ClInclude Include="src\RoseSrvChnWindow.hpp" />
+    <ClInclude Include="src\RoseWindow.hpp" />
+    <ClInclude Include="src\SceneNode.hpp" />
+    <ClInclude Include="src\SceneTree.hpp" />
+    <ClInclude Include="src\ScriptListener.hpp" />
+    <ClInclude Include="src\ScriptManager.hpp" />
+    <ClInclude Include="src\SkeletonNode.hpp" />
+    <ClInclude Include="src\SLList.hpp" />
+    <ClInclude Include="src\SmartPtr.hpp" />
+    <ClInclude Include="src\Socket.hpp" />
+    <ClInclude Include="src\Texture.hpp" />
+    <ClInclude Include="src\TextureStage.hpp" />
+    <ClInclude Include="src\Thread.hpp" />
+    <ClInclude Include="src\Vector2.hpp" />
+    <ClInclude Include="src\Vector3.hpp" />
+    <ClInclude Include="src\Vector4.hpp" />
+    <ClInclude Include="src\VertexBuffer.hpp" />
+    <ClInclude Include="src\VertexBufferBase.hpp" />
+    <ClInclude Include="src\VertexBufferMirror.hpp" />
+    <ClInclude Include="src\VertexBufferTyped.hpp" />
+    <ClInclude Include="src\VertexDeclaration.hpp" />
+    <ClInclude Include="src\VertexElement.hpp" />
+    <ClInclude Include="src\VertexShader.hpp" />
+    <ClInclude Include="src\WindowsOSFileSystem.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BoundingBox.cpp" />
+    <ClCompile Include="src\BoundingSphere.cpp" />
+    <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\DebugDraw.cpp" />
+    <ClCompile Include="src\Degree.cpp" />
+    <ClCompile Include="src\DX9RenderSystem.cpp" />
+    <ClCompile Include="src\Engine.cpp" />
+    <ClCompile Include="src\EventDispatcher.cpp" />
+    <ClCompile Include="src\FileSystem.cpp" />
+    <ClCompile Include="src\FileSystemManager.cpp" />
+    <ClCompile Include="src\FrameListener.cpp" />
+    <ClCompile Include="src\Frustum.cpp" />
+    <ClCompile Include="src\Halia.cpp" />
+    <ClCompile Include="src\Ikarus.cpp" />
+    <ClCompile Include="src\IkarusData.cpp" />
+    <ClCompile Include="src\InputManager.cpp" />
+    <ClCompile Include="src\LogManager.cpp" />
+    <ClCompile Include="src\Math.cpp" />
+    <ClCompile Include="src\Matrix4.cpp" />
+    <ClCompile Include="src\OGLRenderSystem.cpp" />
+    <ClCompile Include="src\OSFileSystem.cpp" />
+    <ClCompile Include="src\Overlay.cpp" />
+    <ClCompile Include="src\OverlayManager.cpp" />
+    <ClCompile Include="src\PixelShader.cpp" />
+    <ClCompile Include="src\Plane.cpp" />
+    <ClCompile Include="src\Point.cpp" />
+    <ClCompile Include="src\Quarternion.cpp" />
+    <ClCompile Include="src\Radian.cpp" />
+    <ClCompile Include="src\Range.cpp" />
+    <ClCompile Include="src\RenderCached.cpp" />
+    <ClCompile Include="src\RenderQueue.cpp" />
+    <ClCompile Include="src\RenderSystem.cpp" />
+    <ClCompile Include="src\RenderWindow.cpp" />
+    <ClCompile Include="src\Resource.cpp" />
+    <ClCompile Include="src\ResourceGroup.cpp" />
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="src\RoseCrypt.cpp" />
+    <ClCompile Include="src\RoseMeshLoader.cpp" />
+    <ClCompile Include="src\RoseNetwork.cpp" />
+    <ClCompile Include="src\ScriptListener.cpp" />
+    <ClCompile Include="src\ScriptManager.cpp" />
+    <ClCompile Include="src\Vector2.cpp" />
+    <ClCompile Include="src\Vector3.cpp" />
+    <ClCompile Include="src\Vector4.cpp" />
+    <ClCompile Include="src\VertexDeclaration.cpp" />
+    <ClCompile Include="src\VertexElement.cpp" />
+    <ClCompile Include="src\VertexShader.cpp" />
+    <ClCompile Include="src\WindowsOSFileSystem.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

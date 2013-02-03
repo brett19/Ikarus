@@ -1,0 +1,33 @@
+Ikarus
+  - File System
+  - Engine Core
+    - Script Manager
+    - Event Manager
+    - Input Manager
+    - Resource Manager
+    - Network Manager
+    - Overlay Manager
+    - Render Window
+    - Render System
+  - Scene Tree
+
+
+
+
+
+
+Input Manager gets polled.
+Input Manager calls its event listener ( Overlay Manager )
+The overlay manager processes the event and returns a value, determining if it was processed or not.
+If the above function returns false, the engine passes the event to its own event listener.
+The event has propagated completely, and should have been processed
+
+
+
+
+Be careful with the overlay and input managers, since the input manager passes events directly to the overlay manager!
+
+
+
+
+

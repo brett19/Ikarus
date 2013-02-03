@@ -1,0 +1,44 @@
+- General Bounding Volume Class
+- Clean up Scene Tree
+- Implement Vertex Shaders properly
+- Implement Multithreaded render process
+
+
+
+
+Primary Events:
+	- KeyDown	[ KeyEvent -> Event ]
+	- KeyUp		[ KeyEvent -> Event ]
+	- MouseUp	[ PosEvent -> Event ]
+	- MouseDown	[ PosEvent -> Event ]
+	- MouseMove	[ PosEvent -> Event ]
+
+	- Click		[ PosEvent -> Event ]
+	- GotFocus	[ Event ]
+	- LostFocus	[ Event ]
+	- Selected	[ Event ]
+	- Deselected	[ Event ]
+	- ValueChanged	[ Event ]
+
+	- GotData	[ Event ]
+	- Connected	[ Event ]
+	- Disconnected	[ Event ]
+
+	- Error		[ ErrorEvent -> Event ]
+
+	- CUSTOM	[ ?? ]
+
+
+[ Event ]
+type : int
+target : EventDispatcher
+
+[ KeyEvent ]  +Event
+keycode : int
+
+[ PosEvent ]  +Event
+position : Vector3d
+
+[ ErrorEvent ]  +Event
+code : int
+text : String

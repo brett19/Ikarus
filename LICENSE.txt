@@ -1,0 +1,18 @@
+Copyright 2008 Brett Lawson
+
+This license applies to the entire Halia Engine as well as Ikarus client.
+
+Any person is permitted to use the Ikarus client for non-commercial
+purposes, providing any credit to the original authors is left intact.
+For commercial purposes, the client may NOT be used without written
+consent from the author.  All source-code is copyright of the author
+and usage of it to compile a 'new' version is strickely prohibited 
+without consent from the author.  Any failure to follow the above 
+license will immediately revoke any permissions granted to utilize
+the software.
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.

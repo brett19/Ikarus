@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Graphviz2.20\bin\dot.exe" reliance.txt -Tpng -oreliance.png

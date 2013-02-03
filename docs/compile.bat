@@ -1,0 +1,2 @@
+"C:\Program Files (x86)\Microsoft DirectX SDK (November 2008)\Utilities\bin\x86\fxc.exe" /E main /T vs_2_0 /Fc "C:\VFSRuffRose\HSHADERS\test.d9vso.txt" /Fo "C:\VFSRuffRose\HSHADERS\test.d9vso" "C:\VFSRuffRose\HSHADERS\test.d9vs"
+PAUSE

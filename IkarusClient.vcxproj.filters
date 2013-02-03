@@ -1,0 +1,576 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{c5644bf4-eb89-4a17-9fd0-a8dc8ff6e21f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core">
+      <UniqueIdentifier>{addcf44a-fe58-4d01-adcb-f7a8201655d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Core\Basic">
+      <UniqueIdentifier>{51613392-5cb9-42aa-81cf-c0f4bb4c5ade}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Debugging">
+      <UniqueIdentifier>{b9a33c12-5f3f-4bb7-bd3e-fb1f74be0a13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Events">
+      <UniqueIdentifier>{1ef31cb3-d807-45ce-85d7-ce13ace34686}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\File System">
+      <UniqueIdentifier>{c3770d78-792c-4b7a-896c-e8687277c3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Input">
+      <UniqueIdentifier>{4f8c2a2e-0ad2-43a8-bddd-4e42a99e36a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Logging">
+      <UniqueIdentifier>{5f2c34ee-e10a-4076-bd50-507eb1c65263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Math">
+      <UniqueIdentifier>{07a7ed96-c6c4-46e9-ac31-9464138c08f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Networking">
+      <UniqueIdentifier>{e2a13253-dba4-4246-9d5b-3afc02e18f25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Overlays">
+      <UniqueIdentifier>{8b54ef07-3468-4374-8002-b6b583bdb2fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering">
+      <UniqueIdentifier>{dff336de-9afb-4386-b093-49b7ee999fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Index Buffers">
+      <UniqueIdentifier>{6bfee3d6-3612-4ce2-a1b7-199e0b7303f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Materials">
+      <UniqueIdentifier>{3ad0833b-9a69-4552-a47c-9dd6cdf64230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Meshs">
+      <UniqueIdentifier>{86e3c6eb-726a-4696-8296-4c4819e280a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Render Systems">
+      <UniqueIdentifier>{104535f4-bbba-48b0-9da8-bb94a4df2945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Render Systems\RS DirectX">
+      <UniqueIdentifier>{4e3e137b-83d8-495a-acc1-f56cd749c3c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Render Systems\RS OpenGL">
+      <UniqueIdentifier>{fefb0733-b201-4eee-983c-c8ddc5b3b5b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Shader &amp; Decls">
+      <UniqueIdentifier>{6e2c338a-ec90-46fa-b1e2-80ad9f0cffef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Rendering\Vertex Buffers">
+      <UniqueIdentifier>{b79a12a9-ede6-4487-a744-1f829f770c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Resources">
+      <UniqueIdentifier>{dc3d6221-dc57-482a-bcc4-0de94469b4bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scene Tree">
+      <UniqueIdentifier>{0aaaadc2-85e1-4635-abe7-fe709f6c4688}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Scripting">
+      <UniqueIdentifier>{c5e530e1-8ad9-4a57-b10d-483f8a05bc5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ikarus">
+      <UniqueIdentifier>{9d45bb66-9574-43ed-8202-1cd8b928fe9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ikarus\Events">
+      <UniqueIdentifier>{4f00226f-1b4a-4588-9586-ef90bdd5768f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ikarus\Game States">
+      <UniqueIdentifier>{b4db83a2-c558-4c36-9599-39959fb4b745}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ikarus\Networking">
+      <UniqueIdentifier>{0aa91b0e-1efd-4dbb-ad4b-f802ac7dc67a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ikarus\Networking\Crypt">
+      <UniqueIdentifier>{dfee9239-2a52-4df9-8e8c-e54157144561}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ikarus\Networking\Crypt\iROSE">
+      <UniqueIdentifier>{0b6f203d-2be6-45d4-9c73-d489c10fffb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ikarus\Windows">
+      <UniqueIdentifier>{35b9edc9-96f4-4957-89f0-e071ad754baa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ArrList.hpp">
+      <Filter>Engine\Core\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BoneNode.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BoundingBox.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\BoundingSphere.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Camera.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Color.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\CriticalSection.hpp">
+      <Filter>Engine\Core\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DebugDraw.hpp">
+      <Filter>Engine\Debugging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Degree.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DX9RenderSystem.hpp">
+      <Filter>Engine\Rendering\Render Systems\RS DirectX</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Engine.hpp">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EntityGroup.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Event.hpp">
+      <Filter>Engine\Core\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventDispatcher.hpp">
+      <Filter>Engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\EventListener.hpp">
+      <Filter>Engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Events.hpp">
+      <Filter>Engine\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileSystem.hpp">
+      <Filter>Engine\File System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FileSystemManager.hpp">
+      <Filter>Engine\File System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Font.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FrameListener.hpp">
+      <Filter>Engine\Rendering\Render Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Frustum.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSDebug.hpp">
+      <Filter>Ikarus\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSInitialLoad.hpp">
+      <Filter>Ikarus\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GSLogin.hpp">
+      <Filter>Ikarus\Game States</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Halia.hpp">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IkarusApp.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IkarusData.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Index.hpp">
+      <Filter>Engine\Rendering\Index Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IndexBuffer.hpp">
+      <Filter>Engine\Rendering\Index Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IndexBufferBase.hpp">
+      <Filter>Engine\Rendering\Index Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IndexBufferMirror.hpp">
+      <Filter>Engine\Rendering\Index Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IndexBufferTyped.hpp">
+      <Filter>Engine\Rendering\Index Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputConstants.hpp">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputManager.hpp">
+      <Filter>Engine\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="src\LogManager.hpp">
+      <Filter>Engine\Logging</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Material.hpp">
+      <Filter>Engine\Rendering\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Matrix4.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Mesh.hpp">
+      <Filter>Engine\Rendering\Meshs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MeshEntity.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Network.hpp">
+      <Filter>Engine\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OGLRenderSystem.hpp">
+      <Filter>Engine\Rendering\Render Systems\RS OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OSFileSystem.hpp">
+      <Filter>Engine\File System</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Overlay.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayButton.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayImage.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayLabel.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayLBLabel.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayListBox.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayManager.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayRenderer.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayTextBox.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\OverlayTexture.hpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PakClient.hpp">
+      <Filter>Ikarus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PakServer.hpp">
+      <Filter>Ikarus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PixelShader.hpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Plane.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Point.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Quarternion.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Radian.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Range.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderable.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderCached.hpp">
+      <Filter>Engine\Rendering\Render Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderQueue.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderResource.hpp">
+      <Filter>Engine\Rendering\Render Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderSystem.hpp">
+      <Filter>Engine\Rendering\Render Systems</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderUnit.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RenderWindow.hpp">
+      <Filter>Engine\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Resource.hpp">
+      <Filter>Engine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ResourceGroup.hpp">
+      <Filter>Engine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ResourceManager.hpp">
+      <Filter>Engine\Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseAnimator.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseCrypt.hpp">
+      <Filter>Ikarus\Networking\Crypt\iROSE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseData.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseDialog.hpp">
+      <Filter>Ikarus\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseEvents.hpp">
+      <Filter>Ikarus\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseGfxList.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseLoginWindow.hpp">
+      <Filter>Ikarus\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseMapLoader.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseMeshList.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseMeshLoader.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseNetwork.hpp">
+      <Filter>Ikarus\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RosePacket.hpp">
+      <Filter>Ikarus\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RosePlayerNode.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseSkeletonLoader.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseSkybox.hpp">
+      <Filter>Ikarus</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseSocket.hpp">
+      <Filter>Ikarus\Networking</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseSrvChnWindow.hpp">
+      <Filter>Ikarus\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\RoseWindow.hpp">
+      <Filter>Ikarus\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneNode.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SceneTree.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptListener.hpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptManager.hpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SkeletonNode.hpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SLList.hpp">
+      <Filter>Engine\Core\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SmartPtr.hpp">
+      <Filter>Engine\Core\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Socket.hpp">
+      <Filter>Engine\Core\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Texture.hpp">
+      <Filter>Engine\Rendering\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureStage.hpp">
+      <Filter>Engine\Rendering\Materials</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Thread.hpp">
+      <Filter>Engine\Core\Basic</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector2.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector3.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector4.hpp">
+      <Filter>Engine\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexBuffer.hpp">
+      <Filter>Engine\Rendering\Vertex Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexBufferBase.hpp">
+      <Filter>Engine\Rendering\Vertex Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexBufferMirror.hpp">
+      <Filter>Engine\Rendering\Vertex Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexBufferTyped.hpp">
+      <Filter>Engine\Rendering\Vertex Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexDeclaration.hpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexElement.hpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\VertexShader.hpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WindowsOSFileSystem.hpp">
+      <Filter>Engine\File System</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\BoundingBox.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\BoundingSphere.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Color.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DebugDraw.cpp">
+      <Filter>Engine\Debugging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Degree.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DX9RenderSystem.cpp">
+      <Filter>Engine\Rendering\Render Systems\RS DirectX</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Engine.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\EventDispatcher.cpp">
+      <Filter>Engine\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileSystem.cpp">
+      <Filter>Engine\File System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FileSystemManager.cpp">
+      <Filter>Engine\File System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FrameListener.cpp">
+      <Filter>Engine\Rendering\Render Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Frustum.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Halia.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IkarusData.cpp">
+      <Filter>Ikarus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\InputManager.cpp">
+      <Filter>Engine\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="src\LogManager.cpp">
+      <Filter>Engine\Logging</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Math.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Matrix4.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OGLRenderSystem.cpp">
+      <Filter>Engine\Rendering\Render Systems\RS OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OSFileSystem.cpp">
+      <Filter>Engine\File System</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Overlay.cpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="src\OverlayManager.cpp">
+      <Filter>Engine\Overlays</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PixelShader.cpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Plane.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Point.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Quarternion.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Radian.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Range.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderCached.cpp">
+      <Filter>Engine\Rendering\Render Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderQueue.cpp">
+      <Filter>Engine\Scene Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderSystem.cpp">
+      <Filter>Engine\Rendering\Render Systems</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RenderWindow.cpp">
+      <Filter>Engine\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Resource.cpp">
+      <Filter>Engine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceGroup.cpp">
+      <Filter>Engine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ResourceManager.cpp">
+      <Filter>Engine\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RoseCrypt.cpp">
+      <Filter>Ikarus\Networking\Crypt\iROSE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RoseMeshLoader.cpp">
+      <Filter>Ikarus</Filter>
+    </ClCompile>
+    <ClCompile Include="src\RoseNetwork.cpp">
+      <Filter>Ikarus\Networking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptListener.cpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptManager.cpp">
+      <Filter>Engine\Scripting</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector2.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector3.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Vector4.cpp">
+      <Filter>Engine\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexDeclaration.cpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexElement.cpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\VertexShader.cpp">
+      <Filter>Engine\Rendering\Shader &amp; Decls</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WindowsOSFileSystem.cpp">
+      <Filter>Engine\File System</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
